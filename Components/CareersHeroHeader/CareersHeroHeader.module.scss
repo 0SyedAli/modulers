@@ -1,0 +1,74 @@
+@import "../../styles/variable.scss";
+
+.about_heroheader_container {
+  width: 100%;
+  min-height: 550px;
+  max-height: 100%;
+  position: relative;
+  background-image: url("../../public/Assets/career_bg.jpg");
+  object-fit: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  @include media(desktop) {
+    min-height: 400px;
+  }
+  @include media(mobile) {
+    min-height: 300px;
+  }
+  @include media(xs-mobile) {
+    min-height: 60vh;
+    background-size: cover;
+    object-fit: fill;
+  }
+  .about_heroheader_content {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 550px;
+
+    max-height: 100%;
+    @include media(desktop) {
+      min-height: 400px;
+    }
+    @include media(mobile) {
+      min-height: 300px;
+    }
+    @include media(xs-mobile) {
+      min-height: 60vh;
+      background-size: cover;
+      object-fit: fill;
+    }
+    @include media(xs-mobile) {
+      background-size: contain;
+      object-fit: fill;
+    }
+    .about_content_container {
+      max-width: 2000px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: $white;
+      }
+      p {
+        max-width: 60%;
+        text-align: center;
+        margin-top: 1rem;
+        color: $white;
+
+        @include media(mobile) {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+}

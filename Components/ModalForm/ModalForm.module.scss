@@ -1,0 +1,104 @@
+@import "../../styles/variable.scss";
+
+.modal_container {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1rem;
+  .modal_header_container {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem 1rem;
+    color: $white;
+    text-align: center;
+    h3 {
+      line-height: 110% !important;
+    }
+  }
+  .btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem 0 1.5rem;
+    button {
+      width: 100%;
+    }
+  }
+  .modal_form_container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    .custom_input {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 1rem;
+      color: $white;
+      cursor: pointer;
+      h6 {
+        padding-bottom: 0.4rem;
+      }
+      .danger {
+        color: $textdanger;
+      }
+      .drop_zone_container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 10vh;
+        background: $secondaryColor;
+        border: 1px solid $darkGrey;
+        color: $darkGrey3;
+        border-radius: 3px;
+        padding: 2rem;
+
+        .drop_zone_container {
+          cursor: pointer;
+        }
+        input {
+          display: none;
+        }
+        small {
+          display: block;
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+    .pdf_container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 1rem 0;
+      color: $white;
+      background: $secondaryColor;
+      border: 1px solid $darkGrey;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      .icon_and_name_container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+          max-width: 30px;
+        }
+        p {
+          margin: 0;
+        }
+      }
+
+      .delete_icon_container {
+        img {
+          max-width: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

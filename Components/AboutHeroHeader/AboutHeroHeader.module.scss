@@ -1,0 +1,68 @@
+@import "../../styles/variable.scss";
+
+.about_heroheader_container {
+  width: 100%;
+  // max-width: 1800px;
+  margin: 0 auto;
+  // min-height: 550px;
+  min-height: 70vh;
+  max-height: 100%;
+  background-color: $primaryColor;
+  position: relative;
+  // background-image: url("../../public/Assets/about_bg.jpeg");
+  object-fit: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: top;
+  background-size: cover;
+
+  @include media(tablet-large) {
+    min-height: 570px;
+  }
+  @include media(mobile) {
+    min-height: 100%;
+    margin-top: 4rem;
+  }
+  @include media(xs-mobile) {
+    min-height: 100%;
+    background-size: cover;
+    object-fit: fill;
+  }
+  .about_heroheader_content {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70vh;
+    max-height: 100%;
+    @include media(tablet-large) {
+      min-height: 570px;
+    }
+
+    @include media(xs-mobile) {
+      background-size: cover;
+      object-fit: fill;
+    }
+    @include media(xs-mobile) {
+      background-size: contain;
+      object-fit: fill;
+    }
+    h1 {
+      margin: 0;
+      padding: 0;
+      color: $white;
+    }
+    p {
+      max-width: 60%;
+      text-align: center;
+      margin-top: 1rem;
+      color: $white;
+
+      @include media(mobile) {
+        max-width: 90%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

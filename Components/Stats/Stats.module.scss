@@ -1,0 +1,35 @@
+@import "../../styles/variable.scss";
+
+.stats_container {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  background-color: $lightGrey2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  .stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      color: $secondaryColor;
+    }
+    .progress_container {
+      span {
+        font-size: 50px;
+        font-weight: 700;
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+@include media(tablet) {
+  .stats_container {
+    flex-wrap: wrap;
+  }
+}

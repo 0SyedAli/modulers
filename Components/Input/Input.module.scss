@@ -1,0 +1,43 @@
+@import "../../styles/variable.scss";
+
+.input_wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $darkGrey;
+    font-size: 1rem;
+    // color: $white;
+    color: $darkGrey3;
+    padding: 0.7rem 1rem;
+    @include media(mobile) {
+      // padding: 0.7rem 0.2;
+      font-size: 15px;
+      padding: 0.7rem 0rem 1.1rem 0rem;
+    }
+    padding-left: 0;
+    &::placeholder {
+      // color: $white;
+      // color: $white;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .danger {
+    color: $textdanger;
+  }
+}
+
+.bordered {
+  input {
+    border: 1px solid $lightGrey3 !important;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+}

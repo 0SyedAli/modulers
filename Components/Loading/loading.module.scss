@@ -1,0 +1,23 @@
+@import "../../styles/variable.scss";
+
+.loading_container {
+  max-width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    max-width: 500px !important;
+  }
+}
+
+@include media(mobile) {
+  .loading_container {
+    img {
+      max-width: 150px !important;
+    }
+  }
+}

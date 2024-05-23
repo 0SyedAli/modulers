@@ -1,0 +1,144 @@
+@import "../../styles/variable.scss";
+
+.contact_us_container {
+  width: 100%;
+  // max-width: 1800px;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  // background-color: $white2;
+  background-color: $footerBackground;
+  // padding: 1rem;
+  // padding-bottom: 3rem;
+
+  @include media(mobile) {
+    // padding-bottom: 3rem;
+  }
+  .contact_us_box {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    margin: auto;
+    @include media(mobile) {
+      // width: 95%;
+      // padding: 0.5rem;
+      padding: 0 1rem 3rem 1rem;
+    }
+    .content_container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      @include media(mobile) {
+        padding: 1.5rem;
+      }
+      @include media(desktop) {
+        border-right: none;
+      }
+      .map_container {
+        height: 100%;
+        filter: grayscale(100);
+        min-height: 40vh;
+        @include media(mobile) {
+          display: none;
+        }
+      }
+      h2 {
+        white-space: normal;
+        margin-top: 0;
+      }
+      .content_items_container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        @include media(mobile) {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-wrap: nowrap;
+        }
+        .content_item {
+          width: 50%;
+          margin: 3rem 0;
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 10px;
+          @include media(mobile) {
+            width: 100%;
+            min-height: auto;
+          }
+          .item_des {
+            padding-left: 10px;
+            h2 {
+              margin-bottom: 0;
+            }
+            p {
+              margin-top: 0;
+              margin-bottom: 0;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    h1 {
+      margin: 0;
+      color: $white;
+    }
+    .form_container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      // overflow: auto;
+      padding: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 3rem;
+      flex-direction: column;
+      @include media(mobile) {
+        padding: 0;
+      }
+      .contactUs_inputs {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // gap: 1rem;
+        .inputs_container {
+          width: 100%;
+          display: flex;
+          gap: 2rem;
+          align-items: center;
+          @include media(mobile) {
+            flex-wrap: wrap;
+            gap: 0;
+          }
+          .inputs {
+            width: 100%;
+          }
+        }
+        small {
+          padding: 0;
+          margin: 0;
+          display: block;
+        }
+      }
+      .select_wrapper {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      .danger {
+        color: $textdanger;
+      }
+    }
+  }
+}

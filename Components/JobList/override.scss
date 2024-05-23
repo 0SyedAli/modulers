@@ -1,0 +1,66 @@
+@import "../../styles/variable.scss";
+
+.accordion_container {
+  .ant-collapse {
+    background: none;
+    border: 0;
+    .ant-collapse-item {
+      border: none;
+      .ant-collapse-content {
+        border: none;
+      }
+      .ant-collapse-header {
+        align-items: center;
+        .ant-collapse-expand-icon {
+          span {
+            svg {
+              font-size: 26px;
+              fill: rgb(184, 182, 182);
+            }
+          }
+        }
+      }
+    }
+    .ant-collapse-item-active {
+      .ant-collapse-header {
+        .ant-collapse-expand-icon {
+          span {
+            // svg {
+            //   transform: rotate(270deg) !important;
+            // }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(mobile) {
+  .accordion_container {
+    .ant-collapse {
+      .ant-collapse-item {
+        .ant-collapse-header {
+          padding-left: 0;
+          padding-right: 0;
+          .ant-collapse-expand-icon {
+            span {
+              svg {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        .ant-collapse-content-box {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.ant-modal-content {
+  padding: 0 !important;
+  background-color: $footerBackground !important;
+  box-shadow: none !important;
+}

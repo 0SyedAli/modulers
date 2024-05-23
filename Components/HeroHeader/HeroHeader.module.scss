@@ -1,0 +1,72 @@
+@import "../../styles/variable.scss";
+
+.hero_header_container {
+  width: 100%;
+  height: 100%;
+  padding: 8rem 2rem 4rem 2rem;
+  margin: auto;
+  background-color: $footerBackground;
+  .content_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6rem;
+    .title_container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: $white;
+      h1 {
+        margin: 0;
+        font-weight: 500;
+      }
+      img {
+        max-width: 60px;
+        height: auto;
+        display: block;
+      }
+    }
+    .description {
+      p {
+        color: $lightGrey4;
+      }
+    }
+  }
+  .image_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 400px;
+      height: auto;
+    }
+  }
+}
+
+@include media(tablet-large) {
+  .hero_header_container {
+    .content_container {
+      padding-left: 0;
+    }
+  }
+}
+
+@include media(tablet) {
+  .hero_header_container {
+    .image_container {
+      padding-top: 2rem;
+    }
+  }
+}
+
+@include media(mobile) {
+  .hero_header_container {
+    padding: 6rem 1rem 4rem 1rem;
+  }
+}

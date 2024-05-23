@@ -1,0 +1,92 @@
+@import "../../styles/variable.scss";
+
+.about_company_container {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: $secondaryColor;
+  // background-image: url("/Assets/honeycomb_light.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  .about_company_content {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    .timeline_section {
+      width: 100%;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      margin-top: 3rem;
+      .image_sec {
+        // width: 50px;
+        // height: 50px;
+        padding: 0.5rem;
+        background-color: $white;
+        border-radius: 50%;
+        box-shadow: 2px 2px 3px #999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          max-width: 40px;
+        }
+      }
+      .content_sec {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding-left: 1.5rem;
+        h1 {
+          color: $primaryColor;
+          margin: 0;
+        }
+        p {
+          margin: 0;
+          color: $white;
+        }
+      }
+    }
+    .image_container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@include media(mobile) {
+  .about_company_container {
+    .row_container {
+      flex-direction: column-reverse;
+    }
+    .timeline_section {
+      margin-top: 0 !important;
+      padding: 1rem !important;
+      gap: 1.5rem !important;
+
+      .content_sec {
+        padding-left: 0 !important;
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../styles/variable.scss";
+
+.whybrisktech_container {
+  width: 100%;
+  height: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 7rem 4rem;
+  @include media(desktop) {
+    padding: 4rem 3rem;
+  }
+  @include media(mobile) {
+    padding: 4rem 2rem;
+  }
+  .whybrisktech_content_container {
+    .image_wrapper {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      //   @include media(desktop) {
+      //     padding: 3rem 2rem;
+      //   }
+      @include media(tablet-large) {
+        justify-content: flex-start;
+        align-items: center;
+      }
+      img {
+        @include media(mobile) {
+          max-width: 100%;
+        }
+      }
+    }
+    .content_wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
+      @include media(mobile) {
+        padding-top: 3rem;
+      }
+      h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+        color: $lightRed;
+        span {
+          color: $black;
+        }
+      }
+      p {
+        text-align: right;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: 90%;
+        @include media(mobile) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/variable.scss";
+
+.textArea_wrapper {
+  height: 100px;
+  textarea {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    font-family: $primary-font;
+    border: none;
+    border-bottom: 1px solid $darkGrey;
+    font-size: 1rem;
+    color: $darkGrey3;
+    padding: 0.7rem 1rem;
+    padding-left: 0;
+    &::placeholder {
+      color: $darkGrey3;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.skills_container {
+  .ant-collapse {
+    background: none;
+    .ant-collapse-item {
+      margin-bottom: 24px;
+      background: $white3;
+      border-radius: 5px;
+      border: none;
+      .ant-collapse-header {
+        align-items: center;
+      }
+    }
+  }
+}

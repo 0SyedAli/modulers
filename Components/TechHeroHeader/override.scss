@@ -1,0 +1,11 @@
+@import "../../styles/variable.scss";
+
+.player_icon {
+  width: 490px;
+  height: 490px;
+
+  @include media(mobile) {
+    width: 380px;
+    height: 380px;
+  }
+}

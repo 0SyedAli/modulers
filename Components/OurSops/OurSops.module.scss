@@ -1,0 +1,41 @@
+@import "../../styles/variable.scss";
+
+.our_sops_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 0rem 3rem;
+  .our_sops_header_container {
+    width: 100%;
+    height: auto;
+    h2 {
+      margin: 0 0 1rem 0;
+      span {
+        color: $primaryColor;
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .our_sops_list{
+    width: 100%;
+    height: auto;
+    position: relative;
+    .list_item{
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      img{
+        max-width: 20px;
+      }
+      p{
+        margin: 0;
+        padding-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../styles/variable.scss";
+
+.our_services_container {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  max-width: 2000px;
+  margin: auto;
+  .our_services_header_container {
+    width: 100%;
+    height: auto;
+    h2 {
+      margin: 0 0 1rem 0;
+      span {
+        color: $primaryColor;
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .our_services {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    .col_container {
+      margin-bottom: 1rem;
+    }
+    .service_card {
+      width: 100%;
+      min-height: 300px;
+      height: 100%;
+      position: relative;
+      background-color: $secondaryColor;
+      box-shadow: 0 5px 10px 0 rgb(12 68 95 / 10%);
+      border-radius: 15px;
+      padding: 2rem;
+      // background-image: url("/Assets/liquid.png");
+      // background-repeat: no-repeat;
+      // background-position: bottom right;
+      h4 {
+        color: $primaryColor;
+        font-weight: bold;
+        margin: 0;
+      }
+      p {
+        margin: 10px auto;
+        text-align: left;
+        color: $white;
+      }
+    }
+  }
+}
+
+@include media(tablet-large) {
+  .our_services_container {
+    padding: 3rem 2rem;
+    .our_services {
+      .service_card {
+        // min-height: 100%;
+      }
+    }
+  }
+}
+
+@include media(tablet) {
+  .our_services_container {
+    padding: 3rem 1rem;
+    .our_services {
+      .service_card {
+        // min-height: 360px;
+        // margin-bottom: 0;
+        // height: 100%;
+      }
+    }
+  }
+}

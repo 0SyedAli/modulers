@@ -1,0 +1,58 @@
+@import "../../styles/variable.scss";
+.why_hire_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 1rem;
+  margin-top: 2rem;
+  .why_hire_box {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgb(32 34 45 / 8%) 2.97589e-15px 48.6px 97.2px;
+    border-radius: 15px;
+    .header_sec {
+      width: 100%;
+      height: auto;
+      background-color: $lightGrey2;
+      padding: 1rem;
+      h3 {
+        text-align: center;
+        margin: 10px auto;
+        span {
+          color: $primaryColor;
+        }
+      }
+    }
+    .why_content {
+      width: 100%;
+      height: auto;
+      // background-color: $secondaryColor;
+      padding: 1rem;
+      .item_container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        .item_header {
+          display: flex;
+          align-items: center;
+          p {
+            // color: white;
+            font-weight: bold;
+            padding-left: 10px;
+            margin: 0;
+          }
+        }
+        p {
+          // color: white;
+          margin: 10px auto;
+        }
+        hr {
+          border-bottom: 1px solid $white3;
+          
+        }
+      }
+    }
+  }
+}

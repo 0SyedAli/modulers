@@ -1,0 +1,41 @@
+.mobile_Nav {
+  background-color: $darkGrey2 !important;
+  .ant-drawer-body {
+  }
+  .ant-drawer-header {
+    display: none;
+  }
+  .cancel_icon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .list {
+    color: $white;
+    margin-top: 3rem;
+    ul {
+      display: flex;
+      flex-direction: column;
+      p {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+      small {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+        font-weight: 600;
+        color: $lightGrey3;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+.ant-dropdown-menu-item-active {
+  background: transparent !important;
+}

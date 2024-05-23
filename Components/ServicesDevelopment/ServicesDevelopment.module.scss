@@ -1,0 +1,217 @@
+@import "../../styles/variable.scss";
+
+.wrapper {
+  // border: 1px solid green;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: $white;
+
+  .software_container {
+    width: 100%;
+    height: 100%;
+    // border: 1px solid green;
+    .software_content_container {
+      width: 100%;
+      max-width: 2000px;
+      margin: auto;
+      .software_image {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        padding: 1rem 1rem 0 4rem;
+
+        .mobile_img {
+          width: 100%;
+          max-width: 700px;
+        }
+      }
+    }
+    .slider_container {
+      width: 100%;
+      height: auto;
+      // background: $secondaryColor;
+      background: rgb(56, 138, 219);
+      background: linear-gradient(
+        121deg,
+        rgba(56, 138, 219, 0.9024859943977591) 21%,
+        rgba(99, 152, 205, 0.8520658263305322) 52%,
+        rgba(99, 152, 205, 0.3310574229691877) 84%
+      );
+      .slider {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        max-width: 2000px;
+        margin: 0 auto;
+        button {
+          background-color: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          svg {
+            fill: $white;
+          }
+        }
+
+        .slider_content {
+          display: flex;
+          max-width: 80rem;
+          width: 100%;
+          padding: 6rem 0rem;
+          overflow-x: scroll;
+          scroll-behavior: smooth;
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+          .card {
+            min-width: 240px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid $white;
+            background-color: $white;
+            border-radius: 20px;
+            margin: 0rem 2rem;
+            padding: 2rem;
+            img {
+              height: auto;
+              min-height: 125px;
+              max-width: 125px;
+              object-fit: contain;
+            }
+
+            p {
+              color: $secondaryColor;
+              font-size: 1.25rem;
+              margin-top: 0.5rem;
+              margin-bottom: 0;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.software_content {
+  // border: 1px solid green;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2.5rem 4rem 2.5rem 0rem;
+
+  h1 {
+    color: $primaryColor;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  p {
+    color: $secondaryColor;
+    // margin-top: 0.4rem;
+    margin-bottom: 0;
+    color: $secondaryColor;
+    // text-align: right;
+  }
+  a {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $white;
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    // margin-top: 1.5rem;
+    padding: 2rem 0;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-right: 10px;
+      text-transform: uppercase;
+      // padding: 1rem 0;
+      color: $secondaryColor;
+    }
+  }
+}
+
+@include media(tablet) {
+  .wrapper {
+    .software_container {
+      .software_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        // width: 90%;
+        img {
+          width: 100% !important ;
+          max-width: 700px;
+          height: auto;
+        }
+      }
+
+      .software_content {
+        padding: 2rem !important;
+      }
+    }
+    .slider {
+      .slider_content {
+        max-width: 48rem !important;
+      }
+    }
+  }
+}
+
+@include media(mobile) {
+  .wrapper {
+    .software_container {
+      .row_container {
+        flex-direction: column-reverse;
+      }
+
+      .software_content {
+        display: flex;
+        max-width: 100%;
+        margin: auto;
+        padding: 2rem 1rem !important;
+        h1 {
+          text-align: right;
+        }
+        p {
+          max-width: 100%;
+          text-align: right;
+        }
+      }
+      .software_image {
+        padding: 1rem 1rem 3rem 1rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          max-width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

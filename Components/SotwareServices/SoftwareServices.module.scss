@@ -1,0 +1,198 @@
+@import "../../styles/variable.scss";
+
+.wrapper {
+  // border: 1px solid green;
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: $secondaryColor;
+  margin: auto;
+
+  .software_container {
+    width: 100%;
+    height: 100%;
+    max-width: 2000px;
+    margin: auto;
+    .software_image {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      padding: 2rem 2rem 0rem 2rem;
+
+      .mobile_img {
+        width: 100%;
+        max-width: 650px;
+      }
+    }
+
+    .software_content {
+      width: 100%;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      // align-items: flex-end;
+      justify-content: flex-end;
+      padding: 4rem 2rem 4rem 0rem;
+
+      h4 {
+        color: $primaryColor;
+        margin-bottom: 0;
+        margin-top: 0;
+        letter-spacing: 0.1em;
+      }
+
+      h1 {
+        color: $primaryColor;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      p {
+        color: $white;
+        // text-align: right;
+      }
+
+      a {
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        // margin-top: 1.5rem;
+        padding: 2rem 0;
+      }
+
+      .icons_container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        // justify-content: flex-end;
+        .icon_item {
+          min-width: 210px;
+          background-color: $whiteGrey;
+          border-radius: 15px;
+          padding: 1rem 1rem 1rem 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-right: 1rem;
+          margin-bottom: 1rem;
+          cursor: pointer;
+          .img_container {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $white;
+            border-radius: 50%;
+            img {
+              width: auto;
+              height: auto;
+              max-width: 50px;
+            }
+          }
+          p {
+            color: $secondaryColor;
+            font-weight: 500;
+            margin-left: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(tablet) {
+  .wrapper {
+    .software_container {
+      .software_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding: 2rem;
+        img {
+          width: 100% !important ;
+          max-width: 700px;
+          height: auto;
+        }
+      }
+
+      .software_content {
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+@include media(mobile) {
+  .wrapper {
+    .software_container {
+      .row_container {
+        flex-direction: column-reverse;
+      }
+      .software_content {
+        display: flex;
+        max-width: 100%;
+        // max-width: 85%;
+        margin: auto;
+        padding: 2rem 1rem;
+
+        h1 {
+          // text-align: right;
+        }
+
+        .icons_container {
+          .icon_item {
+            // margin: 1rem 0rem 1rem 0rem;
+            // width: 100%;
+            min-width: 120px;
+            display: flex;
+            align-items: center;
+
+            .img_container {
+              width: 45px;
+              height: 45px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              img {
+                width: 60%;
+                height: auto;
+              }
+            }
+          }
+        }
+
+        p {
+          max-width: 100%;
+        }
+      }
+      .software_image {
+        padding: 1rem 1rem 3rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          max-width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

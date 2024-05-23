@@ -1,0 +1,36 @@
+@import "../../styles/variable.scss";
+
+.contact_us_container {
+  .ant-select {
+    // padding: 0.7rem 0 !important;
+    .ant-select-arrow {
+      // color: $white;
+    }
+    .ant-select-selector {
+      height: auto !important;
+      background-color: transparent !important;
+      padding: 0.7rem 0rem 0.6rem 0rem !important;
+      border: none !important;
+      color: $black;
+      font-size: 1rem;
+      border-bottom: 1px solid $darkGrey !important;
+      border-radius: 0;
+      padding-left: 0 !important;
+      box-shadow: none !important;
+      .ant-select-selection-item {
+        // color: $white;
+        color: $darkGrey3;
+        // color: $darkGrey3;
+      }
+
+      .ant-select-selection-search {
+        &::placeholder {
+          // color: $white;
+        }
+        &::focus {
+          // color: $white !important;
+        }
+      }
+    }
+  }
+}
